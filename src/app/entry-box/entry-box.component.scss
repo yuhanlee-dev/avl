@@ -1,0 +1,41 @@
+.input-box-container {
+  position: relative;
+  margin: 1rem;
+}
+.input-box {
+  width: 6.5rem;
+  height: 6.5rem;
+  text-align: center;
+  font-size: 3rem;
+  color: #299698;
+  border-radius: 0.8rem;
+  background-color: #2d3035;
+  border: 0.1rem solid #38393e;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: #38393e;
+  }
+}
+
+.under-line {
+  width: 2rem;
+  position: absolute;
+  border-bottom: 0.1rem solid #ababac;
+  bottom: -0.6rem;
+  left: 35%;
+}
+
+.border-gradient {
+  border: 0.1rem solid transparent;
+  background-image: linear-gradient(#2d3035, #2d3035),
+    linear-gradient(to right, #0f8ad1, #5eadaf);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 0 0 5px 1px rgba(57, 209, 212, 0.301);
+}
+
+.input-box-form {
+  display: inline-block;
+}

@@ -1,0 +1,16 @@
+<form class="input-box-form" [formGroup]="entryBox">
+  <ng-container *ngFor="let number of numberBoxList">
+    <span class="input-box-container">
+      <span [ngClass]="{ 'under-line': isEmpty('number' + number) }"></span>
+      <input
+        class="input-box"
+        (focus)="setFocus(true, $event.target)"
+        (blur)="setFocus(false, $event.target)"
+        [placeholder]="number"
+        [formControlName]="'number' + number"
+        maxlength="1"
+        autofocus
+      />
+    </span>
+  </ng-container>
+</form>
